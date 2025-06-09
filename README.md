@@ -24,7 +24,7 @@ conda create -n insightface python=3.10
 
 pip install -r requirements.txt
 
-# 模型下载请联系作者，邮箱1197311349@qqcom
+# 模型下载请联系作者，邮箱1197311349@qq.com
 
 ## 1、FaceQuality
 
@@ -42,10 +42,13 @@ pip install -r requirements.txt
 
 ## 运行
 
+单卡运行：python main.py
 
+多卡运行，修改facequality.sh内容、config/gunicorn_x.py，指定文件路径、运行环境、绑定显卡编号；修改main.py内容，取消注释最后一行app.run()，添加注释app.run(host='0.0.0.0', port=5001, threaded=False, debug=False)，最后执行bash facequality.sh
 
 ## 服务接口
 url: http://ip:5000/faceQuality
+
 POST请求：
 {
     "query_image_base64":"图像base64"
