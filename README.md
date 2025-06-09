@@ -19,10 +19,37 @@
 # 开始
 
 环境： 提前安装CUDA11.7+Cudnn8.9.2、milvus-gpu-2.4.5数据库（可视化可用Attu）
-FaceQuality、FaceMatrix：
 
-conda create -n python=3.10
+conda create -n insightface python=3.10
 
-pip install -r requirements
+pip install -r requirements.txt
+
+# 模型下载请联系作者，邮箱1197311349@qqcom
+
+## 1、FaceQuality
+
+## 模型
+
+人脸检测模型：（1）face_detect_model/sd/sd_det.onnx  或者（2）face_detect_model/rf_landmark106
+
+人脸质量评估模型：（1）EQFaceEQFace/backbone.pth、EQFace/quality.pth   或者  （2）SDD_FIQA/SDD_FIQA_checkpoints_r50.pth
+
+人脸角度模型：FSANet/model/fsanet-1x1-iter-688590.onnx、FSANet/model/fsanet-var-iter-688590.onnx
+
+口罩检测模型：FaceMask/last.onnx、FaceMask/coco.names
+
+以上模型配置选择在文件config/algorithmPara.ini配置
+
+## 运行
+
+
+
+## 服务接口
+url: http://ip:5000/faceQuality
+POST请求：
+{
+    "query_image_base64":"图像base64"
+}
+
 
 
