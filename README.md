@@ -81,3 +81,5 @@ POST请求：
 批量图片生成特征值url: http://ip:端口/algorithm/getBatchFeature
 
 特征值比特征值url: http://ip:端口/algorithm/compareFeatureAndFeature
+
+详细post请求格式见代码main.py和app_run.py内容
