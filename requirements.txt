@@ -128,9 +128,9 @@ timm==0.9.12
 toml==0.10.2
 tomlkit==0.12.0
 toolz==0.12.0
-torch @ file:///home/ai/Downloads/env/torch-2.0.0%2Bcu117-cp310-cp310-linux_x86_64.whl#sha256=f6e26492d214edab5b407e903ed3c7b190ac5709330bd72060d1be01b354c198
-torchaudio @ file:///home/ai/Downloads/env/torchaudio-2.0.1%2Bcu117-cp310-cp310-linux_x86_64.whl#sha256=ad38ec3724fb61898f3a71c592cf4dd9a60ed14ab1b15f7d5c7317f35516ec5f
-torchvision @ file:///home/ai/Downloads/env/torchvision-0.15.1%2Bcu117-cp310-cp310-linux_x86_64.whl#sha256=3fbfa46bc1ec932af1ca82f6cde1ca99304839322b6b06d97a99e3ba6fee4384
+torch==2.0.0
+torchaudio==2.0.1
+torchvision==0.15.1
 tqdm==4.66.1
 triton==2.0.0
 typer==0.9.0
