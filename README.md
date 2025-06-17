@@ -14,8 +14,6 @@
 
 <div align="left">
   <img src="https://github.com/wangjiaxing-00/Large-Face-Recognition/blob/main/images/1.png" width="640"/>
-</div>
-<div align="right">
   <img src="https://github.com/wangjiaxing-00/Large-Face-Recognition/blob/main/images/2.png" width="640"/>
 </div>
 
